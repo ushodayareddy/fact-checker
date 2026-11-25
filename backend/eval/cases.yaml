@@ -1,0 +1,81 @@
+# 50 labelled eval cases. Facts were chosen to be stable (no time-sensitive statistics).
+# expect: acceptable verdict label(s); `no_claims` means the input has nothing checkable and
+#         the extractor should return zero claims.
+# Translations were written by an AI, not a native speaker: have fluent readers review them
+# before treating a failure as a model failure.
+cases:
+  # ---------------- English ----------------
+  - {id: en-01, lang: en, category: entity,      expect: ["true"],  text: "The Taj Mahal is located in Agra."}
+  - {id: en-02, lang: en, category: entity,      expect: ["false"], text: "The capital of India is Mumbai."}
+  - {id: en-03, lang: en, category: history,     expect: ["true"],  text: "India gained independence from British rule in 1947."}
+  - {id: en-04, lang: en, category: history,     expect: ["false"], text: "Mahatma Gandhi was the first Prime Minister of India."}
+  - {id: en-05, lang: en, category: health,      expect: ["false"], text: "Drinking hot water cures cancer."}
+  - {id: en-06, lang: en, category: science,     expect: ["true"],  text: "Water boils at 100 degrees Celsius at sea level."}
+  - {id: en-07, lang: en, category: history,     expect: ["true"],  text: "The Indian Constitution came into effect on 26 January 1950."}
+  - {id: en-08, lang: en, category: health,      expect: ["false"], text: "Vaccines cause autism."}
+
+  # ---------------- Hindi ----------------
+  - {id: hi-01, lang: hi, category: entity,      expect: ["true"],  text: "ताजमहल आगरा में स्थित है।"}
+  - {id: hi-02, lang: hi, category: entity,      expect: ["false"], text: "भारत की राजधानी मुंबई है।"}
+  - {id: hi-03, lang: hi, category: geography,   expect: ["true"],  text: "गंगा नदी हिमालय के गंगोत्री ग्लेशियर से निकलती है।"}
+  - {id: hi-04, lang: hi, category: science,     expect: ["false"], text: "सूर्य पृथ्वी के चारों ओर चक्कर लगाता है।"}
+  - {id: hi-05, lang: hi, category: history,     expect: ["true"],  text: "भारत ने 1947 में आज़ादी हासिल की।"}
+  - {id: hi-06, lang: hi, category: health,      expect: ["false"], text: "गर्म पानी पीने से कैंसर ठीक हो जाता है।"}
+  - {id: hi-07, lang: hi, category: geography,   expect: ["true"],  text: "माउंट एवरेस्ट दुनिया की सबसे ऊँची पर्वत चोटी है।"}
+  - {id: hi-08, lang: hi, category: entity,      expect: ["true"],  text: "रवींद्रनाथ टैगोर ने भारत का राष्ट्रगान लिखा।"}
+
+  # ---------------- Bengali ----------------
+  - {id: bn-01, lang: bn, category: entity,      expect: ["true"],  text: "কলকাতা পশ্চিমবঙ্গের রাজধানী।"}
+  - {id: bn-02, lang: bn, category: entity,      expect: ["false"], text: "তাজমহল দিল্লিতে অবস্থিত।"}
+  - {id: bn-03, lang: bn, category: history,     expect: ["true"],  text: "রবীন্দ্রনাথ ঠাকুর সাহিত্যে নোবেল পুরস্কার পেয়েছিলেন।"}
+  - {id: bn-04, lang: bn, category: health,      expect: ["false"], text: "গরম জল খেলে ক্যান্সার সেরে যায়।"}
+
+  # ---------------- Tamil ----------------
+  - {id: ta-01, lang: ta, category: entity,      expect: ["true"],  text: "தமிழ்நாட்டின் தலைநகரம் சென்னை."}
+  - {id: ta-02, lang: ta, category: entity,      expect: ["false"], text: "தாஜ்மஹால் சென்னையில் உள்ளது."}
+  - {id: ta-03, lang: ta, category: history,     expect: ["true"],  text: "திருவள்ளுவர் திருக்குறளை எழுதினார்."}
+  - {id: ta-04, lang: ta, category: health,      expect: ["false"], text: "தடுப்பூசிகள் ஆட்டிசத்தை ஏற்படுத்துகின்றன."}
+
+  # ---------------- Telugu ----------------
+  - {id: te-01, lang: te, category: entity,      expect: ["true"],  text: "తెలంగాణ రాజధాని హైదరాబాద్."}
+  - {id: te-02, lang: te, category: entity,      expect: ["false"], text: "భారతదేశ రాజధాని ముంబై."}
+  - {id: te-03, lang: te, category: geography,   expect: ["true"],  text: "గంగా నది హిమాలయాల్లో పుడుతుంది."}
+  - {id: te-04, lang: te, category: science,     expect: ["false"], text: "సూర్యుడు భూమి చుట్టూ తిరుగుతాడు."}
+
+  # ---------------- Marathi ----------------
+  - {id: mr-01, lang: mr, category: entity,      expect: ["true"],  text: "महाराष्ट्राची राजधानी मुंबई आहे."}
+  - {id: mr-02, lang: mr, category: entity,      expect: ["false"], text: "ताजमहाल पुण्यात आहे."}
+  - {id: mr-03, lang: mr, category: history,     expect: ["true"],  text: "छत्रपती शिवाजी महाराजांनी मराठा साम्राज्याची स्थापना केली."}
+
+  # ---------------- Gujarati ----------------
+  - {id: gu-01, lang: gu, category: entity,      expect: ["true"],  text: "ગુજરાતની રાજધાની ગાંધીનગર છે."}
+  - {id: gu-02, lang: gu, category: history,     expect: ["true"],  text: "મહાત્મા ગાંધીનો જન્મ પોરબંદરમાં થયો હતો."}
+  - {id: gu-03, lang: gu, category: entity,      expect: ["false"], text: "ભારતની રાજધાની અમદાવાદ છે."}
+
+  # ---------------- Kannada ----------------
+  - {id: kn-01, lang: kn, category: entity,      expect: ["true"],  text: "ಕರ್ನಾಟಕದ ರಾಜಧಾನಿ ಬೆಂಗಳೂರು."}
+  - {id: kn-02, lang: kn, category: entity,      expect: ["false"], text: "ತಾಜ್ ಮಹಲ್ ಬೆಂಗಳೂರಿನಲ್ಲಿದೆ."}
+  - {id: kn-03, lang: kn, category: history,     expect: ["true"],  text: "ಕುವೆಂಪು ಅವರಿಗೆ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಲಭಿಸಿದೆ."}
+
+  # ---------------- Malayalam ----------------
+  - {id: ml-01, lang: ml, category: entity,      expect: ["true"],  text: "കേരളത്തിന്റെ തലസ്ഥാനം തിരുവനന്തപുരം ആണ്."}
+  - {id: ml-02, lang: ml, category: entity,      expect: ["false"], text: "താജ് മഹൽ കൊച്ചിയിലാണ്."}
+  - {id: ml-03, lang: ml, category: history,     expect: ["true"],  text: "ഇന്ത്യയിലെ ആദ്യത്തെ പ്രധാനമന്ത്രി ജവഹർലാൽ നെഹ്റു ആയിരുന്നു."}
+
+  # ---------------- Punjabi ----------------
+  - {id: pa-01, lang: pa, category: entity,      expect: ["true"],  text: "ਪੰਜਾਬ ਦੀ ਰਾਜਧਾਨੀ ਚੰਡੀਗੜ੍ਹ ਹੈ।"}
+  - {id: pa-02, lang: pa, category: entity,      expect: ["true"],  text: "ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਹਰਿਮੰਦਰ ਸਾਹਿਬ ਹੈ।"}
+  - {id: pa-03, lang: pa, category: entity,      expect: ["false"], text: "ਭਾਰਤ ਦੀ ਰਾਜਧਾਨੀ ਲੁਧਿਆਣਾ ਹੈ।"}
+
+  # ---------------- Urdu ----------------
+  - {id: ur-01, lang: ur, category: entity,      expect: ["true"],  text: "لاہور پاکستان کے صوبہ پنجاب کا دارالحکومت ہے۔"}
+  - {id: ur-02, lang: ur, category: entity,      expect: ["true"],  text: "تاج محل آگرہ میں واقع ہے۔"}
+  - {id: ur-03, lang: ur, category: entity,      expect: ["false"], text: "بھارت کا دارالحکومت ممبئی ہے۔"}
+
+  # ---------------- Odia ----------------
+  - {id: or-01, lang: or, category: entity,      expect: ["true"],  text: "ଓଡ଼ିଶାର ରାଜଧାନୀ ଭୁବନେଶ୍ୱର।"}
+
+  # ---------------- Nothing checkable (extractor should return no claims) ----------------
+  - {id: nc-en, lang: en, category: no_claim,    expect: [no_claims], text: "I think cricket is the most boring sport ever."}
+  - {id: nc-hi, lang: hi, category: no_claim,    expect: [no_claims], text: "आप कैसे हैं? आशा है आपका दिन अच्छा रहेगा।"}
+  - {id: nc-ta, lang: ta, category: no_claim,    expect: [no_claims], text: "இந்த படம் மிகவும் அழகாக இருக்கிறது என்று நினைக்கிறேன்."}

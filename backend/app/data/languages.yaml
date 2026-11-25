@@ -1,0 +1,28 @@
+# The 22 scheduled languages of India (8th Schedule) plus English.
+# tier = expected LLM + retrieval quality with local models; low-tier languages cap verdict confidence.
+# wiki_code = Wikipedia subdomain (null when no Wikipedia edition exists; verify at runtime).
+# indictrans_code = AI4Bharat IndicTrans2 language tag.
+languages:
+  - {code: en,  name: English,   native_name: English,   script: Latin,      tier: high,   wiki_code: en,  indictrans_code: eng_Latn}
+  - {code: hi,  name: Hindi,     native_name: हिन्दी,      script: Devanagari, tier: high,   wiki_code: hi,  indictrans_code: hin_Deva}
+  - {code: bn,  name: Bengali,   native_name: বাংলা,       script: Bengali,    tier: high,   wiki_code: bn,  indictrans_code: ben_Beng}
+  - {code: ta,  name: Tamil,     native_name: தமிழ்,       script: Tamil,      tier: high,   wiki_code: ta,  indictrans_code: tam_Taml}
+  - {code: te,  name: Telugu,    native_name: తెలుగు,      script: Telugu,     tier: high,   wiki_code: te,  indictrans_code: tel_Telu}
+  - {code: mr,  name: Marathi,   native_name: मराठी,       script: Devanagari, tier: high,   wiki_code: mr,  indictrans_code: mar_Deva}
+  - {code: gu,  name: Gujarati,  native_name: ગુજરાતી,     script: Gujarati,   tier: high,   wiki_code: gu,  indictrans_code: guj_Gujr}
+  - {code: kn,  name: Kannada,   native_name: ಕನ್ನಡ,       script: Kannada,    tier: high,   wiki_code: kn,  indictrans_code: kan_Knda}
+  - {code: ml,  name: Malayalam, native_name: മലയാളം,     script: Malayalam,  tier: high,   wiki_code: ml,  indictrans_code: mal_Mlym}
+  - {code: pa,  name: Punjabi,   native_name: ਪੰਜਾਬੀ,      script: Gurmukhi,   tier: high,   wiki_code: pa,  indictrans_code: pan_Guru}
+  - {code: ur,  name: Urdu,      native_name: اردو,        script: Arabic,     tier: high,   wiki_code: ur,  indictrans_code: urd_Arab}
+  - {code: as,  name: Assamese,  native_name: অসমীয়া,     script: Bengali,    tier: medium, wiki_code: as,  indictrans_code: asm_Beng}
+  - {code: or,  name: Odia,      native_name: ଓଡ଼ିଆ,        script: Odia,       tier: medium, wiki_code: or,  indictrans_code: ory_Orya}
+  - {code: ne,  name: Nepali,    native_name: नेपाली,       script: Devanagari, tier: medium, wiki_code: ne,  indictrans_code: npi_Deva}
+  - {code: sa,  name: Sanskrit,  native_name: संस्कृतम्,    script: Devanagari, tier: medium, wiki_code: sa,  indictrans_code: san_Deva}
+  - {code: mai, name: Maithili,  native_name: मैथिली,      script: Devanagari, tier: low,    wiki_code: mai, indictrans_code: mai_Deva}
+  - {code: kok, name: Konkani,   native_name: कोंकणी,      script: Devanagari, tier: low,    wiki_code: gom, indictrans_code: gom_Deva}
+  - {code: doi, name: Dogri,     native_name: डोगरी,       script: Devanagari, tier: low,    wiki_code: null, indictrans_code: doi_Deva}
+  - {code: brx, name: Bodo,      native_name: बड़ो,         script: Devanagari, tier: low,    wiki_code: null, indictrans_code: brx_Deva}
+  - {code: ks,  name: Kashmiri,  native_name: کٲشُر,       script: Arabic,     tier: low,    wiki_code: ks,  indictrans_code: kas_Arab}
+  - {code: mni, name: Manipuri,  native_name: ꯃꯤꯇꯩꯂꯣꯟ,     script: Meetei Mayek, tier: low,  wiki_code: mni, indictrans_code: mni_Mtei}
+  - {code: sd,  name: Sindhi,    native_name: سنڌي,        script: Arabic,     tier: low,    wiki_code: sd,  indictrans_code: snd_Arab}
+  - {code: sat, name: Santali,   native_name: ᱥᱟᱱᱛᱟᱲᱤ,     script: Ol Chiki,   tier: low,    wiki_code: sat, indictrans_code: sat_Olck}

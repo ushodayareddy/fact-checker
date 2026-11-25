@@ -1,0 +1,28 @@
+# Domain credibility registry. Matched by domain suffix; first match wins, so list specific entries first.
+# credibility is a prior (0-1) that the validator adjusts for recency, relevance and corroboration.
+tiers:
+  government:
+    credibility: 0.92
+    domains: [pib.gov.in, factcheck.pib.gov.in, rbi.org.in, eci.gov.in, mohfw.gov.in, icmr.gov.in,
+              mospi.gov.in, niti.gov.in, data.gov.in, india.gov.in, indiabudget.gov.in, census.gov.in,
+              nic.in, gov.in, who.int, un.org, worldbank.org, imf.org]
+  ifcn_factchecker:   # verify current IFCN signatory status before relying on this list
+    credibility: 0.88
+    domains: [boomlive.in, altnews.in, factly.in, vishvasnews.com, newschecker.in, afwa.in,
+              factcheck.org, snopes.com, reuters.com/fact-check, apnews.com/hub/ap-fact-check]
+  reference:
+    credibility: 0.80
+    domains: [wikipedia.org, wikidata.org, britannica.com, prsindia.org]
+  major_outlet:
+    credibility: 0.72
+    domains: [thehindu.com, indianexpress.com, hindustantimes.com, timesofindia.indiatimes.com,
+              ndtv.com, bbc.com, bbc.co.uk, reuters.com, apnews.com, scroll.in, thewire.in,
+              livemint.com, business-standard.com, deccanherald.com, telegraphindia.com,
+              indiatoday.in, theprint.in, thequint.com]
+  social_or_user_generated:
+    credibility: 0.20
+    domains: [facebook.com, twitter.com, x.com, instagram.com, whatsapp.com, t.me, reddit.com,
+              quora.com, youtube.com, medium.com, blogspot.com, wordpress.com]
+default:
+  tier: unknown
+  credibility: 0.45

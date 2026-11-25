@@ -1,0 +1,26 @@
+# Fill this in, then rebuild:  see docs/README.md
+# Anything left empty is printed as a visible [placeholder] in the documents and listed at the end of the build.
+
+project_title: "Agentic Fact-Checking for Indian Languages: A Multi-Agent Framework for Evidence Retrieval, Claim Verification and Source Validation"
+short_title: "Agentic Fact Checker"
+
+academic_year: ""        # e.g. 2026-2027
+semester: ""             # e.g. VII Semester
+place: "Bangalore"
+date: ""                 # e.g. 25 November 2026
+
+# One entry per student. Add or remove entries freely.
+team:
+  - {name: "", usn: "", email: ""}
+  - {name: "", usn: "", email: ""}
+  - {name: "", usn: "", email: ""}
+  - {name: "", usn: "", email: ""}
+
+guide:
+  name: ""               # e.g. Dr. A. B. Kumar
+  designation: "Associate Professor"
+
+# These three come from the Jain template you supplied. Please verify they are still current.
+program_head: "Dr. Somasekar J"
+head_of_department: "Dr. Kamlesh Tiwari"
+project_coordinator: "Dr. Chandrasekar Venkatachalam"
